@@ -8,7 +8,6 @@ interface IParam {
 
 export default class Detail extends Component<RouteComponentProps<IParam>> {
   componentDidMount() {
-    console.log(this.props.match.params.id)
     store.dispatch({
       type: 'hide'
     })

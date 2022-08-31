@@ -8,7 +8,6 @@ export default class App extends Component {
   }
   componentDidMount() {
     store.subscribe(() => {
-      console.log(store.getState())
       this.setState({
         isShow: store.getState().isShow
       })
@@ -20,7 +19,7 @@ export default class App extends Component {
       <IndexRouter></IndexRouter>
       {
         this.state.isShow  && (
-      <div>
+      <div style={{paddingTop:'40px', fontSize:'26px'}}>
           我是底部导航栏
       </div>
         )
